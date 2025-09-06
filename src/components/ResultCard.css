@@ -1,0 +1,149 @@
+.result-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #e9ecef;
+}
+
+.result-card h3 {
+  margin: 0 0 1.5rem 0;
+  color: #495057;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.combination-display {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.combination-parts {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.genre-badge,
+.type-badge {
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  min-width: 120px;
+}
+
+.genre-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.type-badge {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.plus {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6c757d;
+}
+
+.rating-display {
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 200px;
+  font-weight: 600;
+}
+
+.rating-score {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.rating-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.rating-description {
+  text-align: center;
+}
+
+.rating-description p {
+  margin: 0;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.good-message {
+  background: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+.okay-message {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.poor-message {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 768px) {
+  .result-card {
+    padding: 1.5rem;
+  }
+  
+  .combination-parts {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .genre-badge,
+  .type-badge {
+    min-width: 150px;
+    padding: 0.5rem 1rem;
+  }
+  
+  .plus {
+    transform: rotate(90deg);
+  }
+  
+  .rating-display {
+    min-width: 180px;
+    padding: 1rem;
+  }
+  
+  .rating-score {
+    font-size: 1.3rem;
+  }
+  
+  .rating-label {
+    font-size: 1rem;
+  }
+}

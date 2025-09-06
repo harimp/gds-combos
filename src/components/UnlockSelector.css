@@ -1,0 +1,306 @@
+.unlock-selector {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.unlock-header {
+  margin-bottom: 30px;
+}
+
+.unlock-header h2 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.unlock-header p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.unlock-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  background: #f8f9fa;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  min-width: 120px;
+}
+
+.stat-item.amazing {
+  background: #e8f5e8;
+  border-color: #2e7d32;
+}
+
+.stat-item.creative {
+  background: #e3f2fd;
+  border-color: #1565c0;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.stat-item.amazing .stat-value {
+  color: #2e7d32;
+}
+
+.stat-item.creative .stat-value {
+  color: #1565c0;
+}
+
+.unlock-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.control-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.control-btn.early-game {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.control-btn.early-game:hover {
+  background: #bbdefb;
+}
+
+.control-btn.unlock-all {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.control-btn.unlock-all:hover {
+  background: #c8e6c9;
+}
+
+.control-btn.reset {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.control-btn.reset:hover {
+  background: #ffcdd2;
+}
+
+.control-btn.import-export {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.control-btn.import-export:hover {
+  background: #ffe0b2;
+}
+
+.import-export-panel {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.import-export-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.export-btn {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.export-btn:hover {
+  background: #0056b3;
+}
+
+.import-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.import-section textarea {
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+  resize: vertical;
+}
+
+.import-btn {
+  padding: 8px 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.import-btn:hover {
+  background: #1e7e34;
+}
+
+.unlock-tabs {
+  display: flex;
+  border-bottom: 2px solid #e9ecef;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #666;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  color: #333;
+  background: #f8f9fa;
+}
+
+.tab-btn.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+  background: #f8f9fa;
+}
+
+.unlock-content {
+  min-height: 400px;
+}
+
+.unlock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  padding: 20px 0;
+}
+
+.unlock-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: #fff;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.unlock-item:hover {
+  border-color: #007bff;
+  background: #f8f9fa;
+}
+
+.unlock-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.unlock-item input[type="checkbox"]:checked + .unlock-label {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.unlock-label {
+  flex: 1;
+  font-size: 0.95em;
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .unlock-selector {
+    padding: 16px;
+  }
+  
+  .unlock-stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .stat-item {
+    min-width: auto;
+  }
+  
+  .unlock-controls {
+    flex-direction: column;
+  }
+  
+  .control-btn {
+    width: 100%;
+  }
+  
+  .unlock-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 8px;
+  }
+  
+  .unlock-item {
+    padding: 10px;
+  }
+  
+  .tab-btn {
+    padding: 10px 16px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .unlock-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .unlock-tabs {
+    flex-direction: column;
+  }
+  
+  .tab-btn {
+    border-bottom: 1px solid #e9ecef;
+    border-right: none;
+  }
+  
+  .tab-btn.active {
+    border-bottom-color: #007bff;
+  }
+}
