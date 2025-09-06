@@ -7,7 +7,7 @@ interface ResultCardProps {
 }
 
 export const ResultCard: React.FC<ResultCardProps> = ({ result }) => {
-  const { genre, type, rating, ratingInfo } = result;
+  const { genre, type, ratingInfo } = result;
 
   return (
     <div className="result-card">

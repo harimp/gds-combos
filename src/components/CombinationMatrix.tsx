@@ -2,7 +2,6 @@ import React, { useState, useMemo } from 'react';
 import { getAllCombinations } from '../utils/combinationLogic';
 import { RATINGS } from '../types';
 import { UnlockState } from '../utils/unlockStorage';
-import comboData from '../data/combo.json';
 import './CombinationMatrix.css';
 
 interface CombinationMatrixProps {
